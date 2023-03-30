@@ -1,0 +1,18 @@
+*
+{ box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+body{ color: white;
+  background-color: rgb(19, 18, 18);}
+header{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: darkgreen;
+    width:100%; height: 100px;
+}
+h1, h2 , h3 , h4 , h5, h6 {
+    color: cyan;
+}
