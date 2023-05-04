@@ -1,0 +1,51 @@
+*{ padding: 0;
+    box-sizing: border-box;
+    margin: 0;}
+body{
+     background-color: #151e30;
+     color:white
+    }
+ h1{ 
+    color: goldenrod;
+    }
+    
+.content, header, .attachments
+{ display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 30px;}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+a{ 
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover 
+{ text-decoration: underline;
+  color: yellow;}
+.banner
+{ background-image: url("https://ead.bri.ifsp.edu.br/moodle/pluginfile.php/103142/course/overviewfiles/fundo_moodle1.jpg");
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 0 10px blue ;}
+.bannerArea
+ {display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;}
