@@ -27,9 +27,11 @@ button:active
 { background-color: green;}
 button:hover 
 { margin-left: 700px;}
-
+.imag{  display: flex;
+  align-items: center;
+  margin-top: 20px;}
 .imag img:hover 
-{ width: 1000px;}
+{ width: 1000px; height: 800px;}
 .imag img 
-{ width: 30px; height: auto;
+{ width: 20px; height: 20px;
   transition: ease 1s;}

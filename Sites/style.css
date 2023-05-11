@@ -16,7 +16,6 @@ body{
     flex-direction: column;
     margin-top: 30px;}
 footer{
-    position: fixed;
     bottom: 0;
     background-color: black;
     width: 100%;
@@ -26,6 +25,7 @@ footer{
     font-size: 25px;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 a{ 
     color: goldenrod;
