@@ -13,8 +13,7 @@
 body
 { 
   background-color: var(--bg-color);
-  color: white;
-  overflow-x: hidden;}
+  color: white;;}
 header 
 { position: fixed;
   top:0;
@@ -33,8 +32,7 @@ p
 span
 { color: var(--main-color);}
 section 
-{ margin-top: 5rem;
-  width: 100%;
+{ width: 100%;
   min-height: 100vh;
   margin-bottom: 5rem;
 }
@@ -93,16 +91,15 @@ a:hover
 }
 .inf-area p 
 { font-size: 1rem;}
+
 .inf-squares-area 
-{display: flex;
+{display: grid;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 2rem;}
+  flex-direction: column;}
+
 .inf-squares-row
-{ margin-top: 2rem; 
-  gap: 2%;
-  margin-top: 2rem;
+{ gap: 2%;
   display: flex;
   flex-direction: row;}
 .inf-square 
@@ -111,7 +108,9 @@ a:hover
   transition: ease 1s;
   padding: 1.5rem;
   min-height: 18rem;
-  max-width: 18rem;}
+  width: 18rem;
+  margin-left: 2rem;
+  margin-top: 1rem;}
   .inf-square i 
   { font-size: 4.5rem;}
 .inf-square:hover
@@ -125,18 +124,17 @@ a:hover
 .inf-square h1
   { line-height: 2rem;}
 .team-area
-{display: flex;
-  align-items: center;
-  justify-content: center;
-gap: 2rem;
-margin-top: 5rem;}
+{display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center}
 .team-photo 
 { border: solid 1px var(--main-color);
   width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;}
+  justify-content: center;
+  margin-top: 2rem;}
 .team-img 
 { width: 80%; height: 300px;
   background-color: black;
@@ -158,13 +156,27 @@ footer img
 { .inf-squares-area 
   { flex-direction: column;
     }
+  .team-area{ grid-template-columns: repeat(2, 1fr);}
 }
 @Media(max-width: 800px)
 { .active{ 
 display: none;
 }
 
-
 .header-menu i 
 { display: block;}
 }
+@media (max-width:700px)
+{.team-area
+  {flex-direction: column;}
+  .team-area{ grid-template-columns: repeat(1, 1fr);}
+  .inf-squares-row
+  { flex-direction: column;
+    margin-top: 0rem; }
+  .inf-square{
+    margin-top: 1rem;
+  }
+
+} 
+@Media (max-width:600px)
+{ *{ font-size: 70%;}}

@@ -5,10 +5,7 @@ ScrollReveal({ reset: true ,
     duration:2000});
     
     ScrollReveal().reveal('.main', { origin:'top' });
-    ScrollReveal().reveal('.phrase h1', { origin:'right' });
     ScrollReveal().reveal('#information', { origin:'top' });
-    ScrollReveal().reveal('.inf-area', { origin:'right' });
-    ScrollReveal().reveal('.how-it-works', { origin:'right' });
     ScrollReveal().reveal('#team', { origin:'top' });
 /*putting a background on header*/
 
