@@ -36,7 +36,7 @@ a:hover
 { text-decoration: underline;
   color: yellow;}
 .banner
-{ background-image: url("https://ead.bri.ifsp.edu.br/moodle/pluginfile.php/103142/course/overviewfiles/fundo_moodle1.jpg");
+{ background-image: url("assets/fundo.jpg");
   width: 500px;
   height: 300px;
   background-size: cover;
