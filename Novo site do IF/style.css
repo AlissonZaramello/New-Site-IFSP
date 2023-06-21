@@ -1,7 +1,10 @@
 *{ box-sizing: border-box;
-   padding: 0; margin: 0;}
+   padding: 0; margin: 0;
+  font-family:roboto, sans-serif;}
 header 
-{ background-color: #195128;}
+{ background-color: #195128;
+  width: 100%;
+  position: fixed;}
 .mainHeader 
 { display: flex; 
   flex-direction: row;
@@ -22,9 +25,9 @@ header
   { color: white;
     text-decoration: none ;}
 .mainHeader a:hover 
-{ text-decoration: underline; }
+{ font-weight: bolder; }
 .mainHeader .logo img 
-{ height:100px;
+{ height:80px;
   margin: 20px;}
 .searchbar .search
 { margin-left: 20px;
@@ -44,7 +47,40 @@ cursor: pointer;}
   background-size: cover;
   color: white;
   display:flex;
+  justify-content: center;}
+.banner h1  
+{ -webkit-text-stroke: black 2.5px;
+  stroke:black 2.5px; ;
+  font-size: 80px;
+  text-align: center;
+  padding: 100px 20%;}
+  .contents 
+  { width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4 ,1fr);
+    padding: 100px 20%;
+    
+    }
+  .contents .content
+  { padding:10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+    transition: ease 1s ;}
+  .contents .content:hover 
+  { background-color: orangered;}
+.contentArea 
+{ display: flex;
+  align-items: center;
   justify-content: center;
-  -webkit-text-stroke: black 1px;
-  stroke: rgb(58, 61, 66) 2px;
-  font-size: 40px;}
+  flex-direction: column;}
+.contentArea h1 
+{margin-top: 50px;
+  color: forestgreen;}
+
