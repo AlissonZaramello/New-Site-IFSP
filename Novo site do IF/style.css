@@ -1,18 +1,25 @@
 *{ box-sizing: border-box;
    padding: 0; margin: 0;
-  font-family:roboto, sans-serif;}
+  font-family:roboto, sans-serif;
+}
+
 header 
-{ background-color: #195128;
-  width: 100%;
-  position: fixed;}
+{ width: 100%;
+  position: fixed;
+}
 .mainHeader 
 { display: flex; 
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;}
+  align-items: center;
+  position: relative;
+  z-index:999 ;
+  background-color: green;
+}
   .mainHeader nav
   { display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+  }
 .mainHeader ul 
 { display: flex;
   flex-direction: row; 
@@ -20,46 +27,91 @@ header
   list-style-type: none;
   display: flex;
   font-size: 20px;
-  gap:20px;}
+  gap:20px;
+}
   .mainHeader a 
   { color: white;
-    text-decoration: none ;}
+    text-decoration: none ;
+    transition: ease 1s;}
 .mainHeader a:hover 
-{ font-weight: bolder; }
+{ color: orangered;
+}
 .mainHeader .logo img 
 { height:80px;
-  margin: 20px;}
+  margin: 20px;
+}
+.downHeader 
+{ background-color: rgb(3, 78, 3);
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+  .hidden {
+    transform: translateY(-100%);
+    z-index:-1 ;
+  }
+.downHeader .left, .right
+{ display: flex;}
+.downHeader .left a, .right a
+{ color:white;
+  text-decoration: none;
+  padding: 10px;
+}
+.downHeader .left a:hover, .right a:hover
+{ color:orangered;
+}
 .searchbar .search
 { margin-left: 20px;
   height: 30px; width: 200px;
   border-radius: 10px;
   border: 0;
   outline: 0;
-  padding: 10px;}
+  padding: 10px;
+}
+.searchButton img
+{height: 15px;
+}
+.searchButton 
+{ height: 30px; 
+  width:30px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  transition: ease 0.5s;}
+.searchButton:hover 
+{background-color: orangered;}
 .submit 
 {height: 30px; width: 30px;
 border-radius: 5px;     
 border: 0;
-cursor: pointer;}
+cursor: pointer;
+}
 .banner 
 { background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80');
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   color: white;
   display:flex;
-  justify-content: center;}
+  align-items: center;
+  justify-content: center;
+}
 .banner h1  
 { -webkit-text-stroke: black 2.5px;
   stroke:black 2.5px; ;
   font-size: 80px;
   text-align: center;
-  padding: 100px 20%;}
+  padding: 100px 20%;
+}
   .contents 
   { width: 100%;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4 ,1fr);
     padding: 100px 20%;
+    align-items: center;
+    justify-content: center;
     
     }
   .contents .content
@@ -72,15 +124,19 @@ cursor: pointer;}
     background-color: forestgreen;
     color: white;
     cursor: pointer;
-    transition: ease 1s ;}
+    transition: ease 1s ;
+  }
   .contents .content:hover 
-  { background-color: orangered;}
+  { background-color: orangered;
+  }
 .contentArea 
 { display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;}
+  flex-direction: column;
+}
 .contentArea h1 
 {margin-top: 50px;
-  color: forestgreen;}
+  color: forestgreen;
+}
 
