@@ -139,4 +139,29 @@ cursor: pointer;
 {margin-top: 50px;
   color: forestgreen;
 }
+.sobre_o_curso h1 {
+  margin-top: 50px;
+  color: forestgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sobre_o_curso .Ocurso {
+  border-right: 3px solid forestgreen;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sobre_o_curso .Requisitos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Informações {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
