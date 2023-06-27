@@ -13,7 +13,7 @@ header
   justify-content: space-around;
   align-items: center;
   position: relative;
-  z-index:999 ;
+  z-index:1 ;
   background-color: green;
 }
   .mainHeader nav
@@ -29,17 +29,46 @@ header
   font-size: 20px;
   gap:20px;
 }
-  .mainHeader a 
+  .navOption a
   { color: white;
     text-decoration: none ;
-    transition: ease 1s;}
-.mainHeader a:hover 
-{ color: orangered;
+    transition: ease 1s;
+    }
+    .navList a:hover
+    { color: orangered;
+    
+      }
+  .navOption 
+  { padding: 10px 0;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;}
+
+  .navList 
+  { width: 150px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+  .navList a 
+  { margin-bottom: 10px;}
+.navOption:hover
+{ background-color: darkgreen;
 }
 .mainHeader .logo img 
 { height:80px;
   margin: 20px;
 }
+.navList
+{ display: none;
+  flex-direction: column;
+  background-color: darkgreen;
+  position:fixed ;
+  z-index: 999;
+}
+.navList a 
+{margin-top: 10px;}
 .downHeader 
 { background-color: rgb(3, 78, 3);
   display: flex;
@@ -92,20 +121,20 @@ cursor: pointer;
 { background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80');
   height: 100vh;
   background-size: cover;
-  color: white;
+  color: rgb(248, 250, 252);
+  text-shadow: 0 2px 5px darkgreen;
   display:flex;
   align-items: center;
   justify-content: center;
 }
 .banner h1  
-{ -webkit-text-stroke: black 2.5px;
-  stroke:black 2.5px; ;
-  font-size: 80px;
+{ font-size: 80px;
   text-align: center;
   padding: 100px 20%;
 }
   .contents 
-  { width: 100%;
+  { 
+    width: 100%;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4 ,1fr);
