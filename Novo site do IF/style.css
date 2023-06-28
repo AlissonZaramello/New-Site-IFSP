@@ -15,6 +15,7 @@ header
   position: relative;
   z-index:1 ;
   background-color: green;
+  border-bottom: darkgreen solid 2px;
 }
   .mainHeader nav
   { display: flex;
@@ -40,16 +41,17 @@ header
       }
   .navOption 
   { padding: 10px 0;
-    width: 150px;
+    width: 170px;
     text-align: center;
-    border-radius: 10px 10px 0 0;}
+    border-radius: 10px 10px 0 0 ;}
 
   .navList 
-  { width: 150px;
+  { width: 170px;
     display: flex;
     align-items: center;
   justify-content: center;
   border-radius: 10px;
+  padding-top: 20px;
 }
   .navList a 
   { margin-bottom: 10px;}
@@ -131,17 +133,16 @@ cursor: pointer;
 { font-size: 80px;
   text-align: center;
   padding: 100px 20%;
+  margin-top: 100px;
 }
   .contents 
-  { 
-    width: 100%;
+  { width: 100%;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4 ,1fr);
     padding: 100px 20%;
     align-items: center;
     justify-content: center;
-    
     }
   .contents .content
   { padding:10px;
@@ -187,6 +188,9 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
 }
+.infoArea
+{ display: flex;
+flex-direction: row;}
 .Informações {
   
   padding-top: 50px;
@@ -194,4 +198,44 @@ cursor: pointer;
   align-items: center;
   justify-content: space-around;
 }
-
+footer 
+{ width: 100%;
+margin-top: 50px;}
+footer .bottominf 
+{width: 100%;
+  padding: 10px 100px;
+background-color: black;
+color: white;
+  font-size: 12px;}
+footer .upinf 
+{ width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: darkgreen;
+  color: white;}
+footer .upinf div 
+{ padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: green 2px solid ;
+  align-items: center;}
+  footer .upinf div h3
+  {margin-bottom: 10px;}
+footer .upinf a 
+{ color: white;
+  text-decoration: none;}
+footer .upinf a:hover 
+{ text-decoration: underline;}
+.mec 
+{ align-items: center;
+  padding: 0;}
+.mec img 
+{ height: auto;
+  width: 150px;
+  margin-top: 10px;}
+.bar 
+{ width: 10px;
+  height: 100px;
+  background-color: gray;}
