@@ -29,3 +29,18 @@ navOptions.forEach((navOptions) => {
         
     })
 })
+
+//about the course
+window.addEventListener('scroll', ()=>
+{
+    let aside = document.querySelector('.line');
+    let scrollPosition = window.scrollY;
+    console.log(window.scrollY)
+
+    if(scrollPosition > 890)
+    {   aside.classList.add('fixed') }
+    if(scrollPosition <= 890 || scrollPosition > 1900) 
+    { aside.classList.remove('fixed')
+       }
+})
+//Move to subject

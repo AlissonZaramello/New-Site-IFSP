@@ -16,6 +16,7 @@ header
   z-index:1 ;
   background-color: green;
   border-bottom: darkgreen solid 2px;
+  height: 20vh;
 }
   .mainHeader nav
   { display: flex;
@@ -179,25 +180,81 @@ cursor: pointer;
 .sobre_o_curso .Ocurso {
   border-right: 3px solid forestgreen;
   width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 .sobre_o_curso .Requisitos {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
+.sobre_o_curso h1 
+{ font-size: 35px;}
 .infoArea
-{ display: flex;
-flex-direction: row;}
+{ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;}
 .Informações {
-  
-  padding-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 25px;
 }
+.Requisitos
+{ padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;} 
+.Ocurso
+{padding:10px;
+ display: flex;
+  align-items: center;
+  flex-direction: column;}
+.Ocurso, .Requisitos 
+{ width: 33vw;}
+aside 
+{ height: 100%;
+  padding: 10%;
+  display: flex;
+  white-space: nowrap;
+}
+.line 
+{ width: 1px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color:black;}
+.fixed 
+{ position: fixed;
+  top: 25%;}
+
+.line a 
+{ background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size:15px;
+  font-weight: 400;
+  padding: 10px;}
+.line a:hover 
+{ font-size: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: ease 0.5s;}
+.line .selected 
+{color: green;
+  font-size: 20px;
+ margin-left: 5px;
+  font-weight: 700;}
+section .title 
+{ color: darkgreen;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;}
+
 footer 
 { width: 100%;
 margin-top: 50px;}
@@ -235,7 +292,3 @@ footer .upinf a:hover
 { height: auto;
   width: 150px;
   margin-top: 10px;}
-.bar 
-{ width: 10px;
-  height: 100px;
-  background-color: gray;}
