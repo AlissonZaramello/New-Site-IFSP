@@ -292,3 +292,102 @@ footer .upinf a:hover
 { height: auto;
   width: 150px;
   margin-top: 10px;}
+
+.link_resolucao {
+  display: block;
+}
+
+.NDE_responsavel p {
+  margin-left: 25px;
+}
+
+.Conteudo_NDE p {
+  margin-top: 10px;
+}
+
+.conteudo_colegiado p {
+  margin: 0 0 10px;
+}
+
+.conteudo_CPA p {
+  margin: 0 0 10px;
+}
+
+.conteudo_CPA .desenvolvimento {
+  margin-left: 25px;
+}
+
+table td, th {
+  border: 1px solid #e8e7e7;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.conteudo_interno td {
+  width: 283px;
+  display: table-cell;
+}
+
+table  {
+  border-spacing: 0;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: separate;
+  text-indent: initial;
+}
+
+.conteudo_interno .email {
+  color: blue;
+}
+
+.conteudo_gestao table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo_gestao .cabecalho {
+  background-color: green;
+  color: white;
+  text-align: left;
+}
+
+.conteudo_gestao p {
+  margin: 0 0 10px;
+}
+
+.conteudo_gestao .Plano {
+  width: 261px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.conteudo_horario table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo_horario .cabecalho {
+  background-color: green;
+  color: white;
+  text-align: left;
+}
+
+.conteudo_horario .semestre {
+  width: 261px;
+  height: 34px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.conteudo_horario .link {
+  width: 417px;
+  height: 52px;
+}
+
+.conteudo_regulamento p {
+  margin: 0 0 10px;
+}
